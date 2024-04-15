@@ -1,0 +1,189 @@
+/************************************** Partie Organisation Blocks ****************************************/
+
+body{
+    margin: 0px;
+    background-color: #6FBFBB;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header nav"
+    "main main main"
+    "footer footer footer";
+}
+
+header{
+
+    background-color:#6FBFBB;
+    grid-area: header;
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    display: flex;
+    height: 10em;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav{
+    background-color: #D7EDEC;
+    grid-area: nav;
+    display: grid;
+    grid-column: 3 / 4;
+    height: 3em;
+    width: 30em;
+}
+
+main{
+    grid-area: main;
+    background-color: #A3D6D4;
+    min-height: 450px;
+    padding-top: 15px;
+}
+
+footer{
+    grid-area: footer;
+    background-color:#6FBFBB;
+}
+
+header hr{
+    width: 75%;
+    margin: auto;
+}
+
+.Detail{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Detail h1{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 30px;
+
+    background: -webkit-linear-gradient(85deg, #8e98a1 30%, rgb(255, 115, 0) 50% , #0d89cc 70%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+
+}
+
+/************************** Partie Navigation *****************************/
+
+a:hover{
+    color: bisque;
+}
+
+li a{
+    color: cadetblue;
+    text-decoration: none;
+}
+
+/********** Menu deroulant ***********/
+
+ul.MenuMain{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+nav ul li .MenuSub{
+    display: none;
+}
+
+nav ul .TriggerSub:hover .MenuSub{
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #A3D6D4;
+
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    color: cadetblue;
+    list-style: none;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+
+footer i{
+    font-size: smaller;
+}
+
+/********************** Decrepited ****************************/
+
+.Picture{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.Boss{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.Employee{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.Employee .Picture{
+    max-width: 250px;
+}
+
+.Picture img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#TextImg{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.Legend{
+    display: flex;
+    max-width: 150px;
+    text-align: center;
+}
